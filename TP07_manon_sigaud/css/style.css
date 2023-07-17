@@ -1,0 +1,199 @@
+/* ---------------GENERAL DEBUT----------------- */
+
+* {
+    font-family:"muli", sans-serif;
+}
+.primary_color {
+    color: rgba(0, 0, 0, 0.66)
+}
+.second_color {
+    color: whitesmoke;
+}
+body {
+    margin: 0;
+}
+/* ---------------- HEADER DEBUT ---------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: auto;
+    max-width: 1140px;
+}
+header img:hover {
+    transform: translateY(15%);
+}
+header nav ul{
+    display: flex;
+    gap: 25px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li:hover {
+    transform: translateY(15%);
+}
+header nav ul a{
+    text-decoration: none;
+}
+
+
+/* -------------------HEADER FIN------------------ */
+
+/* -------------------MAIN DEBUT------------------ */
+#product_analytics_explained {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: blue;
+}
+#product_analytics_explained h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin: 20;
+}
+#product_analytics_explained p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+#product_analytics_explained img {
+    width: 100%;
+}
+#email{
+    border-radius: 15px;
+    height: 35px;
+    width: 250px;
+}
+#button{
+    border-radius: 15px;
+    height: 35px;
+    width: 100px;
+    background-color: rgba(255,231,0,255);
+}
+#key_questions{
+    margin: auto;
+    padding: 100px 0px;
+    max-width: 1140px;
+}
+#key_questions>h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.numbers {
+    display: flex;
+    gap: 50px;
+    padding: 100px 20px;
+}
+.post_it {
+    padding: 10px;
+}
+.post_it h2{
+    color: rgba(64,153,255,255);
+    height: 50px;
+    width: 70px;
+}
+#post_it {
+    background-image: url("../images/background-key.png");
+    background-size: 100%;
+    background-position: 115px;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -3em 3em rgba(100, 139, 239, 0.1),
+    0.3em 0.3em 1em rgba(60, 95, 209, 0.273); 
+}
+#graphiques {
+    background-color: blue;
+    padding: 100px 0px;
+}
+#first_graph, #second_graph{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    align-items: center;
+}
+#first_graph img, #second_graph img{
+    max-width: 100%;
+}
+#first_graph a, #second_graph a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#break_down{
+    max-width: 1140px;
+    margin: auto;
+    padding: 50px;
+}
+#break_down_title>img{
+    max-width: 100%;
+}
+#break_down_container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
+}
+#break_down_container img{
+    max-width: 100%;
+}
+#avis_title {
+    text-align: center;
+    margin: auto;
+    max-width: 1140px;
+    padding: 100px 0px;
+}
+#avis_title h2 {
+    padding-bottom: 20px;
+}
+#avis {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+#avis img{
+    max-width: 100%;
+}
+
+/* --------------------MAIN FIN------------------- */
+
+/* -------------------FOOTER DEBUT---------------- */
+
+footer{
+    background-color: blue;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+#email {
+    background-color: rgb(108, 159, 236);
+    border: 2px solid whitesmoke;
+}
+#email:hover {
+    border: 3px solid whitesmoke;
+}
+#email::placeholder{
+    color: whitesmoke;
+}
+#button_footer {
+    border-radius: 15px;
+    border: none;
+    height: 35px;
+    width: 110px;
+    background-color: rgb(108, 159, 236);
+    color: whitesmoke;
+}
+#button_footer:hover {
+    height: 40px;
+    width: 120px;
+}
+/* -------------------FOOTER FIN------------------ */
+
+@media screen and (max-width: 768px) {
+    header nav{
+        display: none;
+    }
+    .numbers {
+        display: flex;
+        flex-direction: column;
+    }
+}
